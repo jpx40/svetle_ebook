@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+  <script type="module" src="/book_gallery.js" defer></script>
+
+    <script type="module" src="/out2.js" defer></script>
+    <script type="module" src="/surreal.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/example.css" />
+
+    <script
+      src="https://unpkg.com/htmx.org@2.0.2"
+      integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="localforage/dist/localforage.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/xior@0.6.1/dist/xior.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="/assets/epub.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+    <link rel="stylesheet" href="/static/main.css" />
+     <script src="https://cdn.tailwindcss.com"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js"></script>
+     
+  </head>
+
+  <body id="root">
+   <main>
+       
+	<select id="toc"></select>
+	<div id="viewer" class="scrolled"></div>
+       
+	<script>
+
+	</script>
+
+	<div id="gallery2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+<!-- 
+    <div class="dropzone">
+        </div>
+      <!-- <div id="draggable" draggable="true">This div is draggable</div> -->
+    <!-- </div>
+    <div class="dropzone" id="drop-target"></div> -->
+
+  <!-- <div class="flex flex-wrap justify-center items-center" id="gallery"></div> -->
+  <style>
+  </style>
+  <style>
+  
+  .current_selected {
+      
+  }
+  body {
+    /* Prevent the user selecting text in the example */
+    user-select: none;
+  }
+  
+  #draggable {
+    text-align: center;
+    background: white;
+  }
+  
+  .dropzone {
+    width: 200px;
+    height: 20px;
+    background: blueviolet;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .dropzone.dragover {
+    background-color: purple;
+  }
+  
+  .dragging {
+    opacity: 0.5;
+  }
+
+  </style>
+   </main>
+         <div id="home" <div/>
+  </body>
+</html>
