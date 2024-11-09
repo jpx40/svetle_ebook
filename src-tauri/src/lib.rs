@@ -48,7 +48,7 @@ pub fn run() {
         .plugin(tauri_plugin_store::Builder::new().build())
         .setup(|app| {
             // listen to the `event-name` (emitted on any window)
-            let id = app.listen("1", |event| {
+            let id = app.listen("add_book", |event| {
                 let e: crate::types::FilePayload = serde_json::from_str(event.payload()).unwrap();
                 crate::book_table::unpack(
                     std::path::Path::new(e.file.as_str()),

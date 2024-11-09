@@ -17,7 +17,7 @@ async function add_book() {
   });
 
   console.log(file);
-  emit("1", {
+  emit("add_book", {
     file: file
   });
 } 
